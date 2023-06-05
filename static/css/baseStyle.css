@@ -1,15 +1,245 @@
+
 *{
     padding: 0;
     margin: 0;
+}
+body{
+    background-color: azure;
 }
 .navbar{
     background-color: #5C8984 !important;
 }
 .navbar li:hover{
-    background-color: #7fbab3 !important;
+    background-color: #7fbab3;
+    opacity: .9;
 }
 
+/*Home Page*/
+.homeCont{
+    position: relative;
+}
+.pageTitle{
+    position:absolute;
+    font-size: 6rem;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    top: 100px;
+}
+.homeCont img{
+    position: absolute;
+    border: 5px solid #5C8984;
+    width: 100%;
+    opacity: .9;
+    top: 15px;
+}
+.homeCont h2{
+    position: absolute;
+    top: 240px;
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    text-shadow: 2px 2px black;
+}
 
+/*About Page*/
+.aboutCont{
+    width: 70%;
+}
+.aboutCont h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 10px;
+}
+.aboutCont p{
+    border: 5px solid #5C8984;
+    padding: 20px;
+    font-size: 1.7rem;
+    background-color: white;
+    text-align: center;
+}
 
+/*Posts Page*/
+.listCont h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.postCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.postCont .card{
+    max-width: 28%;
+    max-height: 450px;
+    margin: 20px;
+}
+.postCont .card-body{
+    position: relative;
+    height: 460px;
+}
+.postCont .card-title{
+    text-align: center;
+}
+.postCont .card-text{
+    height: 65%;
+    overflow:auto;
+    padding: 10px;
+}
+.card .card-link{
+    position: absolute;
+    bottom: 10px;
+}
 
+/*Create Page*/
+.createCont h1{
+    text-align: center;
+}
+.createCont form{
+    width: 60% !important;
+    margin: auto !important;
+    border: 5px solid #5C8984;
+    padding: 20px;
+}
+.createCont form label{
+    font-weight: bold !important;
+}
+.createCont form input{
+    width: 80%;
+    margin: auto;
+}
+.createCont form textarea{
+    width: 80%;
+    height: 225px;
+    margin: auto;
+}
+.createCont form .btn{
+    width: 35%;
+    margin: auto;
+}
+
+/*Detail Page*/
+.detailCont h1{
+    text-decoration: underline;
+}
+.detailCont h2{
+    font-size: 1.7rem;
+}
+.detailCont h6{
+    font-style: italic;
+    font-size: .9rem;
+}
+
+/*Edit Page*/
+.editCont h1{
+    text-align: center;
+}
+.editCont form{
+    width: 60% !important;
+    margin: auto !important;
+    border: 5px solid #5C8984;
+    padding: 20px;
+    
+}
+.editCont form label{
+    font-weight: bold !important;
+}
+.editCont form input{
+    width: 80%;
+    margin: auto;
+}
+.editCont form textarea{
+    width: 80%;
+    height: 225px;
+    margin: auto;
+}
+.editCont form .btn{
+    width: 35%;
+    margin: auto;
+
+}
+
+/*Delete Page*/
+.deleteCont{
+    margin-top: 25px;
+}
+
+/*Logged Out Page*/
+.logOutCont{
+    margin-top: 25px;
   
+}
+
+/*Login Page*/
+.loginCont{
+    width: 25%;
+    margin: 30px auto;
+   
+}
+.loginCont h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 4rem;
+}
+.loginCont form{
+    width: 100%;
+    margin: auto;
+    display: relative;
+    border: 5px solid #5C8984;
+    padding: 25px;
+    background-color: white;
+}
+.loginCont form label{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+}
+.loginCont form input{
+    width: 55%;
+    margin: auto;
+}
+.loginCont form .btn{
+    width: 25%;
+    display:block;
+}
+
+/*Password Change Page*/
+.passChangeCont{
+    width: 45%;
+    margin: 30px auto;
+}
+.passChangeCont form{
+    border: 5px solid #5C8984;
+    padding: 25px;
+    background-color: white;
+}
+.passChangeCont form label{
+    font-weight: bold;
+}
+.passChangeCont form li{
+    font-style: italic;
+}
+
+/*Sign Up Cont*/
+.signupCont{
+    width: 45%;
+    margin: 20px auto;
+}
+.signupCont h1{
+    text-align: center;
+    font-size: 3.2rem;
+}
+.signupCont form{
+    border: 5px solid #5C8984;
+    padding: 25px;
+    background-color: white;
+}
+.signupCont form label{
+    font-weight: bold;
+}
+.signupCont form li{
+    font-style: italic;
+}
