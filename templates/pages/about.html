@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}About{% endblock title %}
 
 {% block content %}
 <div class="container aboutCont">
-<h1>About!</h1>
-<p>The purpose of this blog is to help the beginner who doesn’t want to be a beginner anymore. If all you do is learn songs from guitar tabs or YouTube you’ll have a hard time learning to fly. The self-taught guitarist will eventually run out of runway.
-    <br/>
-    This blog is designed to help the longtime beginner do more than just memorize songs from tabs and videos. If you’ve already played guitar for a while and still haven’t made much progress, this could be the right course for you.
-</p>
+    <img src="{% static 'img/guitar.jpg' %}">
+    <h1>About!</h1>
+    <p>The purpose of this blog is to help the beginner who doesn’t want to be a beginner anymore. If all you do is learn songs from guitar tabs or YouTube you’ll have a hard time learning to fly. The self-taught guitarist will eventually run out of runway.
+        <br/>
+        This blog is designed to help the longtime beginner do more than just memorize songs from tabs and videos. If you’ve already played guitar for a while and still haven’t made much progress, this could be the right course for you.
+    </p>
 </div>
 
 {% endblock content %}

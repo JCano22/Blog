@@ -49,6 +49,8 @@ main{
     width: 100%;
     opacity: .9;
     top: 15px;
+    object-fit: cover;
+    max-height:100vh;
 }
 .homeCont h2{
     position: absolute;
@@ -61,22 +63,45 @@ main{
 
 /*About Page*/
 .aboutCont{
-    width: 70%;
+    
+    position: relative;
+  
+}
+.aboutCont img{
+    position: absolute;
+    border: 5px solid #5C8984;
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    opacity: .9;
+    top: 15px;
 }
 .aboutCont h1{
     font-size: 4rem;
     text-align: center;
     margin: 10px;
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    color: white;
+    text-shadow: 1px 1px black;
+    
 }
 .aboutCont p{
     border: 5px solid #5C8984;
     padding: 20px;
     font-size: 1.3rem;
     background-color: white;
+    opacity: .8;
     text-align: center;
     width: 70%;
     margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 18%;
+    text-shadow: 1px 1px black .8;
 }
+
 
 /*Posts Page*/
 .listCont h1{
