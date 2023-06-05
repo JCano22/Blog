@@ -8,11 +8,28 @@ body{
 }
 .navbar{
     background-color: #5C8984 !important;
+    position: relative;
 }
 .navbar li:hover{
     background-color: #7fbab3;
     opacity: .9;
 }
+.navbar .liRight1{
+    position: absolute;
+    right: 75px;
+}
+.navbar .liRight2{
+    position: absolute;
+    right: 143px;
+}
+.navbar .liRight3{
+    position:absolute;
+    right:77px;
+}
+main{
+    z-index: 0;
+}
+
 
 /*Home Page*/
 .homeCont{
@@ -54,9 +71,11 @@ body{
 .aboutCont p{
     border: 5px solid #5C8984;
     padding: 20px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     background-color: white;
     text-align: center;
+    width: 70%;
+    margin: auto;
 }
 
 /*Posts Page*/
@@ -81,6 +100,7 @@ body{
 }
 .postCont .card-title{
     text-align: center;
+    height: 55px;
 }
 .postCont .card-text{
     height: 65%;
@@ -196,14 +216,20 @@ body{
     margin: auto;
     padding: 10px;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 .loginCont form input{
-    width: 55%;
+    width: 65%;
     margin: auto;
 }
 .loginCont form .btn{
     width: 25%;
     display:block;
+}
+.loginCont .reset{
+    text-align: center;
+    padding-top:10px ;
+    margin: 5px;
 }
 
 /*Password Change Page*/
@@ -242,4 +268,20 @@ body{
 }
 .signupCont form li{
     font-style: italic;
+}
+
+/*Reset Form Page*/
+.resetCont{
+    width:45%;
+    margin: 30px auto;
+
+}
+.resetCont form label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.resetDone{
+    margin-top: 60px;
+    text-align: center;
 }
