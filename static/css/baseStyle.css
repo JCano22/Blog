@@ -26,9 +26,6 @@ body{
     position:absolute;
     right:77px;
 }
-main{
-    z-index: 0;
-}
 
 
 /*Home Page*/
@@ -65,7 +62,7 @@ main{
 .aboutCont{
     
     position: relative;
-  
+    z-index: 0;
 }
 .aboutCont img{
     position: absolute;
