@@ -43,9 +43,13 @@
                 <a class="nav-link" 
                 href="{% url 'new' %}">Create Post</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" 
+                href="{% url 'drafts' %}">Drafts</a>
+              </li>
               <li class="nav-item dropdown liRight1">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Hello, <span style="font-weight: bold;">{{ user }}</span>
+                  Welcome, <span style="font-weight: bold;">{{ user }}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
